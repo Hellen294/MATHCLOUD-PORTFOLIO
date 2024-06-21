@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathCloud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>MathCloud</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Unlock the Power of Web Development and Digital Marketing</h2>
+            <p>Professional solutions to elevate your business.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Welcome to MathCloud, where we transform your digital presence.</h2>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="marshall.jpeg" alt="Marshall Jacob">
+                </div>
+                <div class="about-text">
+                    <p>My name is Marshall Jacob, and I am a passionate and experienced web developer and designer dedicated to helping businesses like yours thrive in the digital landscape. I offer expertise in web development, design, and digital marketing to elevate your business to new heights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Page -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-content">
+                <div class="service-card">
+                    <h3>Web Development and Design</h3>
+                    <p>Create stunning, responsive websites tailored to your business needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>SEO Optimization</h3>
+                    <p>Enhance your online visibility and drive organic traffic.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Social Media Management</h3>
+                    <p>Manage and grow your social media presence with engaging content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Page -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://assets.bitdegree.org/online-learning-platforms/storage/media/html%20code-5f43678d8179d.o.jpg" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Website coding</h3>
+                        <p>Web developement project</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://www.integrityinfoedge.com/wp-content/uploads/2023/02/social-media-management.png" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media</h3>
+                        <p>Social media manager</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0840/8370/3830/articles/1603954182-seo-article-header.png?v=1714646999" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>SEO</h3>
+                        <p>Online optimization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonials-carousel">
+            <div class="testimonial-item">
+                <p>"Marshall Jacob transformed our website and boosted our online presence significantly."</p>
+                <h3>- Adebayo Williams</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>"The SEO services provided by MathCloud have helped our business grow exponentially."</p>
+                <h3>- Jessica Smith</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>"Our social media engagement has never been better thanks to Marshall's expertise."</p>
+                <h3>- Chidinma Okafor</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>"Marshall's design skills are top-notch. Our website looks amazing and is very user-friendly."</p>
+                <h3>- John Brown</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>"The web development services provided by MathCloud exceeded our expectations."</p>
+                <h3>- Ngozi Eze</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="button" onclick="submitForm()">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#">Linkedin</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2023 MathCloud. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const whatsappNumber = '+2348102341648';
+            
+            const whatsappMessage = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('https://whitelabelninja.com/wp-content/uploads/2024/06/12-2.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; /* Add padding for small screens */
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-section .btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Introduction Section */
+.intro-section {
+    padding: 20px 0;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 0 20px; /* Add padding for small screens */
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px; /* Add padding for small screens */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.about-image {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin for spacing on small screens */
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.about-text {
+    flex: 2 1 100%;
+    padding: 20px;
+}
+
+/* Services Section */
+.services-section {
+    padding: 50px 20px; /* Add padding for small screens */
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid blue; /* Thick blue border */
+    border-radius: 10px;
+    flex: 1 1 calc(50% - 40px); /* 2 cards per row with margin */
+    box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+.service-card p {
+    margin-bottom: 0;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 50px 20px; /* Add padding for small screens */
+    background: #f4f4f4;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.portfolio-item {
+    position: relative;
+    flex: 1 1 100%;
+    margin: 10px 0; /* Adjust margin for small screens */
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px 20px; /* Add padding for small screens */
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial-item {
+    flex: 0 0 300px;
+    margin: 0 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    scroll-snap-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px; /* Add padding for small screens */
+    background: url('https://www.aktechwebsolutions.com/images/slide_02.jpg') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-section label {
+    margin-bottom: 5px;
+}
+
+.contact-section input, .contact-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .about-content {
+        flex-wrap: nowrap;
+    }
+
+    .services-content {
+        flex-wrap: nowrap;
+    }
+
+    .portfolio-grid {
+        flex-wrap: nowrap;
+    }
+}
